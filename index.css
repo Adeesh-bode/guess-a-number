@@ -1,0 +1,137 @@
+:root
+{
+    --clr-drk-txt:black;
+    --clr-lgt-txt:white;
+}
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* outline: auto; */
+}
+body
+{
+    background:var(--clr-lgt-txt);
+    
+}
+.dark-mode
+{
+    --clr-drk-txt:white;
+    --clr-lgt-txt:black;
+
+}
+.hero
+{   
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+.credits
+{
+    color: var(--clr-drk-txt);
+    font-size: 4rem;
+    letter-spacing: 2px;
+
+}
+.credits:hover
+{
+    transform: scale(1.05);
+}
+.credits span
+{
+    color: green;
+}
+.display
+{   
+    /* position: absolute; */
+    color:var(--clr-drk-txt);
+
+    font-family: "poppins";
+    height:400px;
+    width: 650px;
+    background-color: var(--clr-lgt-txt);
+    
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 2%;
+    box-shadow: 0px 0px 8px 2px var(--clr-drk-txt);
+}
+.display:hover
+{
+    box-shadow: 0px 0px 12px 3px var(--clr-drk-txt);
+}
+.display h3
+{
+    text-align: center;
+    color: green;
+}
+.display input
+{
+    height: 50px;
+    width: 90px;
+    font-size: 1.5rem;
+    text-align: center;
+    color:var(--clr-drk-txt);
+
+    padding: 3px;
+    color: green;
+
+    background-color: var(--clr-lgt-txt);
+
+}
+.display button
+{
+    font-size: 1.2rem;
+    text-align: center;
+
+    height: 40px;
+    width: 110px;
+    
+    color:var(--clr-lgt-txt);
+    background-color: #5151E5;
+    border-radius: 5px;
+    box-shadow: 3px 4px 2px var(--clr-drk-txt);
+    cursor: pointer;
+}
+.display button:hover
+{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 786px) {
+    .credits
+    {
+        font-size: 3rem;
+    }
+    .display {
+        width: 70%; 
+        max-width: 70%; 
+        height: 20%;
+        max-height:30%; 
+    }
+    .display h2
+    {
+        font-size: 80%;
+    }
+
+    .display h3
+    {
+        font-size: 70%;
+    }
+    .display input
+    {
+        font-size: 1.2rem;
+        
+    }
+    
+}
+

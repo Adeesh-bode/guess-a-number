@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/webp" href="gfglogo.webp">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <div class="credits" id="mode">
+                <span>G</span>eeks <span>F</span>or <span>G</span>eeks
+            </div>
+        <div class="display">
+            <div class="statement">
+                <h2>I am thinking of a number between 1-10</h2>
+                <h3>Can you guess it?</h3>
+            </div>
+            <label for="inputofnumber"></label>
+            <input type="number" id="inputofnumber" placeholder="Num" max="10" min="1">
+            <button id="checkguess">
+                Guess
+            </button>
+            <div class="results">
+                <h2>No. Of Guesses:<span id="numberofguess">0</span></h2>
+                <h3>Your guess is <span id="help"></span></h2>
+            </div>
+        </div>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
